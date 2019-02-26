@@ -19,13 +19,13 @@
                 <td class="text-center">{{ driver_name }}</td>
                 <td class="text-center">{{ status }}</td>
                 <td class="text-center">
-                    <a href="/cars/edit/{{ _id }}" class="btn btn-info">
-                        <span class="glyphicon-edit"></span>
+                    <a href="/cars/edit/{{ _id }}" alt="Editar" title="Editar" class="btn btn-info">
+                        <i class="fas fa-edit"></i>
                     </a>
                     <form action="/cars/{{ _id }}" method="POST" style="display: inline-block">
                         <input type="hidden" name="_method" value="DELETE">
-                        <button type="submit" class="btn btn-warning">
-                            <span class="glyphicon-trash"></span>
+                        <button type="submit" alt="Apagar" title="Apagar" class="btn btn-warning">
+                            <i class="fas fa-trash-alt"></i>
                         </button>
                     </form>
                 </td>
